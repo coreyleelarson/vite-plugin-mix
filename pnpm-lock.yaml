@@ -4,7 +4,7 @@ specifiers:
   '@egoist/prettier-config': ^0.1.0
   '@rollup/plugin-commonjs': ^18.0.0
   '@rollup/plugin-node-resolve': ^11.2.1
-  '@rollup/plugin-sucrase': ^3.1.0
+  '@rollup/plugin-sucrase': 4.0.2
   '@sucrase/jest-plugin': ^2.0.0
   '@types/jest': ^26.0.20
   '@types/polka': ^0.5.2
@@ -27,7 +27,7 @@ devDependencies:
   '@egoist/prettier-config': 0.1.0
   '@rollup/plugin-commonjs': 18.0.0_rollup@2.45.2
   '@rollup/plugin-node-resolve': 11.2.1_rollup@2.45.2
-  '@rollup/plugin-sucrase': 3.1.0_rollup@2.45.2
+  '@rollup/plugin-sucrase': 4.0.2_rollup@2.45.2
   '@sucrase/jest-plugin': 2.0.0
   '@types/jest': 26.0.20
   '@types/polka': 0.5.2
@@ -609,15 +609,15 @@ packages:
       rollup: 2.45.2
     dev: true
 
-  /@rollup/plugin-sucrase/3.1.0_rollup@2.45.2:
-    resolution: {integrity: sha512-PZ70LDNgIj8rL+3pKwKwTBOQ2c9JofXeLbWz+2V4/nCt4LqwYTNqxJJf1riTJsVARVzJdA0woIzUzjKZvL8TfA==}
-    engines: {node: '>=8.0.0'}
+  /@rollup/plugin-sucrase/4.0.2_rollup@2.45.2:
+    resolution: {integrity: sha512-QQ5c1wfJQHCiVRaeSZPBVXG9tXeP5+FdHsnwbkyCTINSeHgCYXiVeMFqodgw6r/lG4v6ECGkcQ1SStvE+DHt5w==}
+    engines: {node: '>=12.0.0'}
     peerDependencies:
-      rollup: ^1.20.0 || ^2.0.0
+      rollup: ^2.53.1
     dependencies:
-      '@rollup/pluginutils': 3.1.0_rollup@2.45.2
+      '@rollup/pluginutils': 4.1.2
       rollup: 2.45.2
-      sucrase: 3.18.1
+      sucrase: 3.20.3
     dev: true
 
   /@rollup/pluginutils/3.1.0_rollup@2.45.2:
@@ -630,6 +630,14 @@ packages:
       estree-walker: 1.0.1
       picomatch: 2.2.3
       rollup: 2.45.2
+    dev: true
+
+  /@rollup/pluginutils/4.1.2:
+    resolution: {integrity: sha512-ROn4qvkxP9SyPeHaf7uQC/GPFY6L/OWy9+bd9AwcjOAWQwxRscoEyAUD8qCY5o5iL4jqQwoLk2kaTKJPb/HwzQ==}
+    engines: {node: '>= 8.0.0'}
+    dependencies:
+      estree-walker: 2.0.2
+      picomatch: 2.2.3
     dev: true
 
   /@sinonjs/commons/1.8.2:
@@ -956,7 +964,7 @@ packages:
     engines: {node: '>= 8'}
     dependencies:
       normalize-path: 3.0.0
-      picomatch: 2.2.2
+      picomatch: 2.2.3
     dev: true
 
   /aproba/1.2.0:
@@ -1816,6 +1824,7 @@ packages:
     resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -2928,7 +2937,7 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       braces: 3.0.2
-      picomatch: 2.2.2
+      picomatch: 2.2.3
     dev: true
 
   /micromatch/4.0.4:
@@ -3075,6 +3084,7 @@ packages:
 
   /node-notifier/8.0.2:
     resolution: {integrity: sha512-oJP/9NAdd9+x2Q+rfphB2RJCHjod70RcRLjosiPMMu5gjIfwVnOUGq2nbTjTUbmy0DJ/tFIVT30+Qe3nzl4TJg==}
+    requiresBuild: true
     dependencies:
       growly: 1.3.0
       is-wsl: 2.2.0
@@ -3330,11 +3340,6 @@ packages:
 
   /performance-now/2.1.0:
     resolution: {integrity: sha1-Ywn04OX6kT7BxpMHrjZLSzd8nns=}
-    dev: true
-
-  /picomatch/2.2.2:
-    resolution: {integrity: sha512-q0M/9eZHzmr0AulXyPwNfZjtwZ/RBZlbN3K3CErVrk50T2ASYI7Bye0EvekFY3IP1Nt2DHu0re+V2ZHIpMkuWg==}
-    engines: {node: '>=8.6'}
     dev: true
 
   /picomatch/2.2.3:
@@ -3971,8 +3976,8 @@ packages:
       ts-interface-checker: 0.1.13
     dev: true
 
-  /sucrase/3.18.1:
-    resolution: {integrity: sha512-TRyO38wwOPhLLlM8QLOG3TgMj0FKk+arlTrS9pRAanF8cAcHvgRPKIYWGO25mPSp/Rj87zMMTjFfkqIZGI6ZdA==}
+  /sucrase/3.20.3:
+    resolution: {integrity: sha512-azqwq0/Bs6RzLAdb4dXxsCgMtAaD2hzmUr4UhSfsxO46JFPAwMnnb441B/qsudZiS6Ylea3JXZe3Q497lsgXzQ==}
     engines: {node: '>=8'}
     hasBin: true
     dependencies:
